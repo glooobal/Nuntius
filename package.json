@@ -1,0 +1,14 @@
+{
+  "name": "nuntius",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.1",
+    "pg": "^8.11.3"
+  }
+}
