@@ -45,7 +45,7 @@ for (const file of commandFiles) {
   if (data && execute) {
     client.commands.set(data.name, { data, execute });
   } else {
-    throw new Error();
+    console.error('No data or execute in', filePath);
   }
 }
 
