@@ -16,7 +16,7 @@ for (const file of commandFiles) {
   if (data && execute) {
     commands.push(data.toJSON());
   } else {
-    console.log(
+    console.error(
       `${filePath} is missing a required "data" or "execute" property.`
     );
   }
@@ -31,7 +31,7 @@ const rest = new REST().setToken(process.env.DISCORD_TOKEN);
       { body: commands }
     );
 
-    console.log(
+    console.info(
       `Successfully reloaded ${data.length} application (/) commands.`
     );
   } catch (error) {
