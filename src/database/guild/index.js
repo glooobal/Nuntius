@@ -1,4 +1,4 @@
-import { getClient } from './getClient.js';
+import { getClient } from '../getClient.js';
 
 export async function createGuild(guildId) {
   const pgClient = await getClient();

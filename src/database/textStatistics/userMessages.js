@@ -1,4 +1,4 @@
-import { getClient } from './getClient.js';
+import { getClient } from '../getClient.js';
 
 export async function addUserMessages(guildId, userId) {
   const pgClient = await getClient();
@@ -20,4 +20,17 @@ export async function addUserMessages(guildId, userId) {
   }
 
   await pgClient.end();
+}
+
+export async function getUserMessages(guildId, userId) {
+  const pgClient = await getClient();
+
+  const userData = await pgClient.query(
+    `SELECT * FROM "${guildId}" WHERE userId = '${userId}'`
+  );
+
+  const user = userData.rows[0];
+
+  if (user) return user.totalmessages;
+  else return 0;
 }
