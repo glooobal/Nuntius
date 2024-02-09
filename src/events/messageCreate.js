@@ -1,5 +1,5 @@
 import { Events } from 'discord.js';
-import { addUserMessages } from '../database/text/userMessages.js';
+import { addUserMessages } from '../database/textStatistics/userMessages.js';
 
 export default {
   name: Events.MessageCreate,
