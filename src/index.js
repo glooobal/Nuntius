@@ -6,26 +6,18 @@ import { join, resolve } from 'path';
 import 'dotenv/config';
 
 const {
-  DirectMessages,
-  DirectMessageReactions,
   Guilds,
-  GuildEmojisAndStickers,
   GuildMembers,
   GuildMessages,
-  GuildMessageReactions,
   GuildVoiceStates,
   MessageContent,
 } = GatewayIntentBits;
 
 const client = new Client({
   intents: [
-    DirectMessages,
-    DirectMessageReactions,
     Guilds,
-    GuildEmojisAndStickers,
     GuildMembers,
     GuildMessages,
-    GuildMessageReactions,
     GuildVoiceStates,
     MessageContent,
   ],

@@ -1,4 +1,5 @@
 import { getClient } from '../getClient.js';
+import { getServerRanking } from './serverRanking.js';
 
 export async function getUserRanking(guildId, userId) {
   const pgClient = await getClient();

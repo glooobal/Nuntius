@@ -9,5 +9,6 @@ export async function getServerRanking(guildId) {
 
   const ranking = rankingData.rows;
 
-  return ranking;
+  if (ranking) return ranking;
+  else return [];
 }
