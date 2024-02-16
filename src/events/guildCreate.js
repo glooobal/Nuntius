@@ -1,5 +1,5 @@
 import { Events } from 'discord.js';
-import { createGuild } from '../database/guild/index.js';
+import { createGuild } from '../database/Guild.js';
 
 export default {
   name: Events.GuildCreate,

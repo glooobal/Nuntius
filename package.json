@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon .",
-    "start": "node ."
+    "start": "node .",
+    "deploy": "node src/scripts/deploy.js",
+    "deployDev": "node src/scripts/deployDev.js"
   },
   "dependencies": {
     "discord.js": "^14.14.1",
